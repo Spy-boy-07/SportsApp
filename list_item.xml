@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/cont_item_root"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="16dp"
+                android:layout_marginLeft="15dp"
+    >
+
+    <TextView
+        android:id="@+id/Location"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:text="Location"
+        android:layout_below="@+id/Time"
+        android:layout_alignStart="@+id/Time"/>
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignStart="@+id/Date"
+        android:layout_below="@+id/Date"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:text="Time"/>
+
+    <TextView
+        android:id="@+id/Day"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:text="Day"
+        android:layout_below="@+id/lbl_item_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="103dp"/>
+
+    <ImageView
+        android:id="@+id/im_item_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:tint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/lbl_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/im_item_icon"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:text="TiTle"/>
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_below="@+id/lbl_item_text"
+        android:layout_toEndOf="@+id/im_item_icon"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:text="Date"/>
+
+</RelativeLayout>

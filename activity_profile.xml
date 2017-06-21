@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_profile"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.varun.finalproject.ProfileActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linearLayout"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/btn_profile">
+
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/click_pics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click pics!"
+        android:layout_above="@+id/btn_profile"
+        android:layout_alignStart="@+id/et_profile"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="28dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/picture_camera"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/click_pics"
+        android:layout_alignStart="@+id/click_pics"
+        android:layout_marginStart="12dp"/>
+
+    <EditText
+            android:id="@+id/et_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="display name"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/btn_profile"/>
+
+        <Button
+            android:id="@+id/btn_profile_change_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Change Email"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/et_profile"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="31dp"/>
+
+
+    <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/picture_camera"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/manteam"
+        android:cropToPadding="true"
+        android:scaleType="centerInside"/>
+
+
+</RelativeLayout>
+

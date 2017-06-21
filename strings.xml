@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="text_camera_save">Picture saved to gallery</string>
+    <string name="set_picture">Set Picture</string>
+</resources>
