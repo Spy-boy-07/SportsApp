@@ -1,2 +1,2 @@
 # SportsApp
-Sports Events Management Application in Android
+Sports Events Management Application in Android (App)
